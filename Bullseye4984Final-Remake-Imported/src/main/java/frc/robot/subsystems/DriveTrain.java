@@ -58,6 +58,7 @@ public DriveTrain(){
     double left = controller.getRawAxis(RobotMap.DRIVER_CONTROLLER_LEFT_STICK_Y);
     double right = controller.getRawAxis(RobotMap.DRIVER_CONTROLLER_RIGHT_STICK_Y);
     if(isSlow) {
+      System.out.println("----Robot is SLOW, Please speed up----");
       left = left*.4;
       right = right*.4;
     }
