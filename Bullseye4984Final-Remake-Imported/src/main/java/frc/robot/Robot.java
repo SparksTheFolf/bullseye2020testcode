@@ -81,6 +81,7 @@ public class Robot extends TimedRobot {
           String cameraConfig; 
           cameraConfig = usbCamera1.getConfigJson();
           if (cameraConfig.isEmpty() == false) {
+              System.out.println("-----------------------CameraConfig is OPERATIONAL-----------------------");
               System.out.println(cameraConfig.toString()); //print to console
           }
       }
