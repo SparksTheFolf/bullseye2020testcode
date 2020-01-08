@@ -14,7 +14,7 @@ import frc.robot.RobotMap;
 import frc.robot.commands.TankDriveCommand;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMax.IdleMode;
-import com.revrobotics.CANSparkMaxLowLevel.ConfigParameter;
+//import com.revrobotics.CANSparkMaxLowLevel.ConfigParameter;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
@@ -36,10 +36,10 @@ public DriveTrain(){
       leftDriveMotor1.setOpenLoopRampRate(0.8);
       rightDriveMotor.setOpenLoopRampRate(0.8);
       rightDriveMotor1.setOpenLoopRampRate(0.8);
-      leftDriveMotor.setParameter(ConfigParameter.kInputDeadband, .2);
-      leftDriveMotor1.setParameter(ConfigParameter.kInputDeadband, .2);
-      rightDriveMotor.setParameter(ConfigParameter.kInputDeadband, .2);
-      rightDriveMotor1.setParameter(ConfigParameter.kInputDeadband, .2);
+     // leftDriveMotor.setParameter(ConfigParameter.kInputDeadband, .2);
+      //leftDriveMotor1.setParameter(ConfigParameter.kInputDeadband, .2);
+      //rightDriveMotor.setParameter(ConfigParameter.kInputDeadband, .2);
+      //rightDriveMotor1.setParameter(ConfigParameter.kInputDeadband, .2);
       
       leftDriveMotor.setIdleMode(IdleMode.kCoast);
       leftDriveMotor1.setIdleMode(IdleMode.kCoast);
